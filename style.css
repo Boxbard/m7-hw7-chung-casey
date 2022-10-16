@@ -155,7 +155,7 @@ span.tooltip:focus > span {
   position: absolute;
   z-index: 1;
   
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(42, 59, 70);
   color: white;
   text-align: center;
   border-radius: 6px;
@@ -166,13 +166,21 @@ span.tooltip:focus > span {
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
-  width: 120px;
+  width: 200px;
   bottom: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -100px;
+  box-shadow: 0 4px 8px rgb(42, 59, 70);
 }
 
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(42, 59, 70) transparent transparent transparent;
 }
